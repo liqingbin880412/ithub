@@ -1,10 +1,12 @@
 const express = require('express')
 
+
+
+const router = require('./router')
+
 const app = express()
 
-app.get('/', (req,res) => {
-	res.send('hello world')
-})
+app.use(router)
 
 
 
